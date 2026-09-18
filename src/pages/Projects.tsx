@@ -1,3 +1,69 @@
+import ProjectCard from "../components/ProjectCard"
+
+const projects = [
+  {
+    title: "Teaching Samples",
+    description:
+      "An AI-assisted teaching platform that helps educators create structured lesson plans from selected text and language features.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "Supabase",
+      "Docker",
+    ],
+    image: "https://placehold.co/800x500?text=Teaching+Samples",
+    github: "#",
+  },
+  {
+    title: "RoamSphere",
+    description:
+      "A full-stack destination discovery platform where users can explore, create listings, leave reviews, and save their favourite places.",
+    technologies: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JavaScript",
+      "Bootstrap",
+    ],
+    image: "https://placehold.co/800x500?text=RoamSphere",
+    github: "#",
+    demo: "#",
+  },
+  {
+    title: "AirBrB",
+    description:
+      "An Airbnb-inspired single-page application developed in a two-person team using React. The application supports creating, editing, publishing, and managing accommodation listings, with component and UI tests covering major user workflows.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Material UI",
+    ],
+    image: "https://placehold.co/800x500?text=AirBrB",
+    github: "#",
+  },
+]
+
 export default function Projects() {
-  return <h1>Projects</h1>
+  return (
+    <main className="mx-auto max-w-7xl px-4 py-8">
+      <div className="mb-5">
+        <p className="text-md font-semibold text-blue-500">My Work</p>
+        <h3 className="mt-3 text-4xl font-bold text-slate-900">Projects</h3>
+        <p className="mt-1 max-w-2xl text-lg text-slate-600">
+          Some projects I've built and worked on, including personal and
+          production sites built for real clients
+        </p>
+      </div>
+      <div>
+        {projects.map((project, index) => (
+          <ProjectCard 
+            key={project.title}
+            index={index}
+            {...project}
+          />
+        ))}
+      </div>
+    </main>
+  )
 }
