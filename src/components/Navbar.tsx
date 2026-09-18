@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <nav className="border-b border-slate-200">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
-        <NavLink to="/" className="text-xl font-semibold tracking-tight text-slate-900">
+        <NavLink to="/" className="text-xl font-semibold text-slate-900">
           <span className="mr-2 text-blue-400">■</span>
           Edbert C Angwyn
         </NavLink>
