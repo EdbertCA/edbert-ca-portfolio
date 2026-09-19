@@ -26,12 +26,13 @@ export default function Home() {
 
           <div className="flex justify-center">
             <div className="flex aspect-square w-full max-w-md items-center justify-center rounded-3xl bg-blue-50">
-              <span className="text-slate-400">
-                Your photo
-              </span>
+              <img 
+                src="Edbert_Opera.jpeg" 
+                alt="Edbert C Angwyn" 
+                className="rounded-3xl h-full w-full object-cover"
+              />
             </div>
           </div>
-          
         </div>
       </section>
     </main>

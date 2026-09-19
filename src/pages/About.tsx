@@ -180,11 +180,11 @@ export default function About() {
           </ul>
         </div>
         <div className="flex justify-center w-1/2">
-          <div className="flex aspect-square w-full max-w-md items-center justify-center rounded-3xl bg-blue-50">
+          <div className="flex aspect-square w-full max-w-md items-center justify-center rounded-3xl bg-blue-50 object-fill">
             <img 
-              src="Edbert_Cendol.jpeg" 
+              src="Edbert_Burwood.jpeg" 
               alt="Edbert C Angwyn" 
-              className="rounded-3xl"
+              className="rounded-3xl h-full w-full object-cover"
             />
           </div>
         </div>
