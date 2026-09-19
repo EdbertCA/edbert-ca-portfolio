@@ -1,40 +1,85 @@
+import {
+  Headphones,
+  GraduationCap,
+  SquarePlay,
+  Utensils,
+} from "lucide-react";
+
+import {
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiReact,
+  SiTailwindcss,
+  SiMui,
+  SiNodedotjs,
+  SiExpress,
+  SiFastapi,
+  SiPostgresql,
+  SiMongodb,
+  SiSupabase,
+  SiGit,
+  SiGithub,
+  SiDocker,
+  SiJira,
+} from "react-icons/si";
+
+import { FaJava, FaHtml5, FaCss3Alt } from "react-icons/fa";
+
 const skills = {
-  "Languages": [
-    "JavaScript",
-    "TypeScript",
-    "Python",
-    "Java",
-    "C",
-    "SQL",
+  Languages: [
+    { name: "JavaScript", icon: SiJavascript },
+    { name: "TypeScript", icon: SiTypescript },
+    { name: "Python", icon: SiPython },
+    { name: "Java", icon: FaJava },
   ],
 
-  "Frontend": [
-    "React",
-    "HTML",
-    "CSS",
-    "Tailwind CSS",
-    "Material UI",
+  Frontend: [
+    { name: "React", icon: SiReact },
+    { name: "HTML", icon: FaHtml5 },
+    { name: "CSS", icon: FaCss3Alt },
+    { name: "Tailwind CSS", icon: SiTailwindcss },
+    { name: "Material UI", icon: SiMui },
   ],
 
-  "Backend": [
-    "Node.js",
-    "Express.js",
-    "FastAPI",
+  Backend: [
+    { name: "Node.js", icon: SiNodedotjs },
+    { name: "Express.js", icon: SiExpress },
+    { name: "FastAPI", icon: SiFastapi },
   ],
 
-  "Databases & Services": [
-    "PostgreSQL",
-    "MongoDB",
-    "Supabase",
+  Databases: [
+    { name: "PostgreSQL", icon: SiPostgresql },
+    { name: "MongoDB", icon: SiMongodb },
+    { name: "Supabase", icon: SiSupabase },
   ],
 
-  "Tools": [
-    "Git",
-    "GitHub",
-    "Docker",
-    "Jira",
+  Tools: [
+    { name: "Git", icon: SiGit },
+    { name: "Github", icon: SiGithub },
+    { name: "Docker", icon: SiDocker },
+    { name: "Jira", icon: SiJira },
   ],
 };
+
+const hobbies = [
+  {
+    name: "Listening to music",
+    icon: Headphones,
+  },
+  {
+    name: "Watching YouTube",
+    icon: SquarePlay,
+  },
+  {
+    name: "Teaching Mathematics",
+    icon: GraduationCap,
+  },
+  {
+    name: "Exploring new food",
+    icon: Utensils,
+  },
+];
 
 export default function About() {
   return (
@@ -97,14 +142,17 @@ export default function About() {
             <div className="pr-3" key={category}>
               <h3 className="mb-3 text-xl font-semibold">{category}</h3>
               <ul className="flex flex-wrap gap-3">
-                {technologies.map((technology) => (
-                  <li 
-                    key={technology}
-                    className="rounded-full border border-blue-200 bg-blue-500 px-4 py-2 text-sm text-white"
-                  >
-                    {technology}
-                  </li>
-                ))}
+                {technologies.map((technology) => {
+                  return (
+                    <li
+                      key={technology.name}
+                      className="flex items-center gap-2 rounded-full border border-blue-200 bg-blue-500 px-4 py-2 text-sm text-white"
+                    >
+                      <technology.icon className="text-lg" />
+                      {technology.name}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
@@ -123,10 +171,12 @@ export default function About() {
           </p>
 
           <ul className="mt-5 space-y-3 text-slate-600">
-            <li>🎵 Listening to music</li>
-            <li>📺 Watching YouTube</li>
-            <li>🧮 Teaching mathematics</li>
-            <li>Hunting food</li>
+            {hobbies.map((hobby) => (
+              <li key={hobby.name} className="flex items-center gap-3">
+                <hobby.icon className="h-5 w-5 text-blue-500" />
+                {hobby.name}
+              </li>
+            ))}
           </ul>
         </div>
         <div className="flex justify-center w-1/2">
