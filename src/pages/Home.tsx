@@ -27,7 +27,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="flex aspect-square w-full max-w-md items-center justify-center rounded-3xl bg-blue-50">
               <img 
-                src="Edbert_Opera.jpeg" 
+                src="personal/Edbert_Opera.jpeg" 
                 alt="Edbert C Angwyn" 
                 className="rounded-3xl h-full w-full object-cover"
               />
