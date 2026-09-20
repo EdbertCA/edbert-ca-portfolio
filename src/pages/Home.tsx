@@ -7,8 +7,8 @@ export default function Home() {
         <div className="grid w-full grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
             <div className="py-3 mb-2">
-              <h1 className="font-bold text-4xl leading-tight tracking-tight text-slate-900 md:text-5xl">Hi, I am Edbert</h1>
-              <h2 className="text-slate-500">Software Engineer· Web Developer</h2>
+              <h1 className="font-bold text-4xl leading-tight tracking-tight text-slate-900 md:text-5xl">Edbert Clarence Angwyn</h1>
+              <h2 className="text-slate-500">Software Engineer · Web Developer</h2>
             </div>
 
             <p>
