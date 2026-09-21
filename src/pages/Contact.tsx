@@ -3,7 +3,11 @@ import {
   MailPlus
 } from 'lucide-react'
 
+import { useForm, ValidationError } from '@formspree/react';
+
 export default function Contact() {
+  const [state, handleSubmit] = useForm("mljdjlry");
+
   return (
     <section className="mx-auto max-w-7xl px-4 py-8">
       <p className="text-sm font-semibold uppercase tracking-widest text-blue-500">Get in Touch</p>
@@ -14,14 +18,19 @@ export default function Contact() {
         to discuss an opportunity, a project, or simply connect.
       </p>
       <section className="mt-8 flex flex-col gap-12 md:flex-row">
-        <form action="" className="flex flex-1 flex-col gap-3">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-1 flex-col gap-3"
+        >
           <label htmlFor="name" className="font-medium">Name</label>
           <input
             type="text"
             id="name"
             name="name"
             className="rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+            required
           />
+          <ValidationError field="name" errors={state.errors} />
 
           <label htmlFor="email" className="font-medium">Email</label>
           <input
@@ -29,7 +38,9 @@ export default function Contact() {
             id="email"
             name="email"
             className="rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+            required
           />
+          <ValidationError field="email" errors={state.errors} />
 
           <label htmlFor="message" className="font-medium">Message</label>
           <textarea
@@ -37,15 +48,25 @@ export default function Contact() {
             id="message"
             rows={5}
             className="resize-none rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+            required
           />
+          <ValidationError field="message" errors={state.errors} />
 
           <button
             type="submit"
+            disabled={state.submitting}
             className="mt-4 w-fit rounded-xl bg-blue-500 px-4 py-2 transition text-white hover:bg-blue-600"
           >
-            Send Message
+            {state.submitting ? "Sending..." : "Send Message"}
           </button>
+
+          {state.succeeded && (
+            <p className="text-green-600">
+              Thanks! Your message has been sent.
+            </p>
+          )}
         </form>
+        
         <div className="md:w-1/3">
           <h2 className="text-2xl font-semibold">
             Direct Links
