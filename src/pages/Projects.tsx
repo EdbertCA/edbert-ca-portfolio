@@ -12,8 +12,8 @@ const projects = [
       "Supabase",
       "Docker",
     ],
-    image: "https://placehold.co/800x500?text=Teaching+Samples",
-    github: "#",
+    image: "projects/teaching_sample.webp",
+    github: "https://github.com/unsw-cse-comp99-3900/capstone-project-26t2-3900-h09a-cherry",
   },
   {
     title: "RoamSphere",
@@ -26,9 +26,9 @@ const projects = [
       "JavaScript",
       "Bootstrap",
     ],
-    image: "https://placehold.co/800x500?text=RoamSphere",
-    github: "#",
-    demo: "#",
+    image: "projects/roamsphere.png",
+    github: "https://github.com/EdbertCA/roamsphere",
+    demo: "https://roamsphere-cznu.onrender.com/",
   },
   {
     title: "AirBrB",
@@ -39,8 +39,8 @@ const projects = [
       "JavaScript",
       "Material UI",
     ],
-    image: "https://placehold.co/800x500?text=AirBrB",
-    github: "#",
+    image: "projects/airbrb.webp",
+    github: "https://nw-syd-gitlab.cseunsw.tech/COMP6080/25T3/groups/SHINYJOY/airbrb",
   },
 ]
 
