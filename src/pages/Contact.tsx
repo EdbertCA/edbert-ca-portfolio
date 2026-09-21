@@ -14,7 +14,7 @@ export default function Contact() {
       <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">Let's talk</h1>
       <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
         I'm currently interested in software engineering and
-        web development opportunities. Feel free to reach me out
+        web development opportunities. Feel free to reach out
         to discuss an opportunity, a project, or simply connect.
       </p>
       <section className="mt-8 flex flex-col gap-12 md:flex-row">
@@ -30,7 +30,7 @@ export default function Contact() {
             className="rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
             required
           />
-          <ValidationError field="name" errors={state.errors} />
+          <ValidationError field="name" errors={state.errors} className="text-sm text-red-600"/>
 
           <label htmlFor="email" className="font-medium">Email</label>
           <input
@@ -40,7 +40,7 @@ export default function Contact() {
             className="rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
             required
           />
-          <ValidationError field="email" errors={state.errors} />
+          <ValidationError field="email" errors={state.errors} className="text-sm text-red-600"/>
 
           <label htmlFor="message" className="font-medium">Message</label>
           <textarea
@@ -50,12 +50,12 @@ export default function Contact() {
             className="resize-none rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
             required
           />
-          <ValidationError field="message" errors={state.errors} />
+          <ValidationError field="message" errors={state.errors} className="text-sm text-red-600"/>
 
           <button
             type="submit"
             disabled={state.submitting}
-            className="mt-4 w-fit rounded-xl bg-blue-500 px-4 py-2 transition text-white hover:bg-blue-600"
+            className="mt-4 w-fit rounded-xl bg-blue-500 px-4 py-2 transition text-white hover:bg-blue-600 disabled:cursor-not-allowed disabled:opacity-50" 
           >
             {state.submitting ? "Sending..." : "Send Message"}
           </button>
@@ -66,7 +66,7 @@ export default function Contact() {
             </p>
           )}
         </form>
-        
+
         <div className="md:w-1/3">
           <h2 className="text-2xl font-semibold">
             Direct Links
@@ -87,6 +87,7 @@ export default function Contact() {
               <a
                 href="https://www.linkedin.com/in/edbert-clarence-angwyn/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-1 font-medium text-blue-500 hover:text-blue-700"
               >
                 LinkedIn <MoveUpRight className="h-4 w-4"/>
