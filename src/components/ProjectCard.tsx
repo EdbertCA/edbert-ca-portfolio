@@ -22,13 +22,13 @@ export default function ProjectCard({title, description, technologies, image, gi
         </div>
         <div className="mt-6 flex gap-4">
           {github && (
-            <a href={github} className="font-medium text-blue-600 hover:text-blue-800">
+            <a href={github} target="_blank" rel="noopener noreferrer" className="font-medium text-blue-600 hover:text-blue-800">
               GitHub ↗
             </a>
           )}
 
           {demo && (
-            <a href={demo} className="font-medium text-blue-600 hover:text-blue-800">
+            <a href={demo} target="_blank" rel="noopener noreferrer" className="font-medium text-blue-600 hover:text-blue-800">
               Live Demo ↗
             </a>
           )}
