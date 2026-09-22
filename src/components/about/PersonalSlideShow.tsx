@@ -21,11 +21,21 @@ export default function PersonalSlideShow() {
   
   return (
     <div>
-      <img
-        src={IMAGES[index]}
-        alt="Personal"
-        className="rounded-3xl aspect-square h-full w-full object-cover"
-      />
+      <div className="overflow-hidden rounded-3xl">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${index * 100}%)`}}
+        >
+          {IMAGES.map((image, i) => (
+            <img
+              key={i}
+              src={image}
+              alt="Personal"
+              className="aspect-square w-full object-cover"
+            />
+          ))}
+        </div>
+      </div>
 
       <div className="flex items-center justify-center gap-2 mt-4">
         {IMAGES.map((_, i) => (
