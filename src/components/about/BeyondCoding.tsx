@@ -1,4 +1,5 @@
 import { hobbies } from "../../data/about";
+import PersonalSlideShow from "./PersonalSlideShow";
 
 export default function BeyondCoding() {
   return (
@@ -28,12 +29,8 @@ export default function BeyondCoding() {
       </div>
 
       <div className="flex w-1/2 justify-center">
-        <div className="aspect-square w-full max-w-md overflow-hidden rounded-3xl">
-          <img
-            src="personal/Edbert_Burwood.jpeg"
-            alt="Edbert C Angwyn"
-            className="h-full w-full object-cover"
-          />
+        <div className="w-full max-w-md overflow-hidden rounded-3xl">
+          <PersonalSlideShow />
         </div>
       </div>
     </section>

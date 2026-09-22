@@ -68,3 +68,10 @@ export const hobbies = [
   { name: "Teaching Mathematics", icon: GraduationCap },
   { name: "Exploring new food", icon: Utensils },
 ];
+
+export const IMAGES = [
+  "personal/Edbert_Opera.jpeg",
+  "personal/Edbert_Burwood.jpeg",
+  "personal/Edbert_Teaching.png",
+  "personal/Edbert_Cendol.jpeg"
+]
