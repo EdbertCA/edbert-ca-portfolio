@@ -1,8 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IMAGES } from "../../data/about"
 
 export default function PersonalSlideShow() {
   const [index, setIndex] = useState(0);
+
+  const goNext = () => setIndex((i) => (i + 1) % IMAGES.length);
+  const goPrev = () => setIndex((i) => (i - 1 + IMAGES.length) % IMAGES.length);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "ArrowLeft") goPrev();
+
+      if (event.key === "ArrowRight") goNext();
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [])
   
   return (
     <div>

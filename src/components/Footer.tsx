@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="mt-3 border-t border-slate-200">
       <div className="mx-auto flex gap-3 flex-col sm:flex-row max-w-7xl items-center justify-between px-8 py-6">
-        <p>Build by Edbert C Angwyn · React + Tailwind</p>
+        <p className="text-slate-400 tracking-tight font-medium">Made by Edbert C Angwyn</p>
         <div className="flex gap-5 items-center">
           <a
             href="https://github.com/EdbertCA"
