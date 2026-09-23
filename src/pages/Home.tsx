@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <main>
-      <section className="mx-auto flex min-h-[calc(100vh-100px)] max-w-7xl items-center px-4 text-xl">
+      <section className="py-4 mx-auto flex min-h-[calc(100vh-100px)] max-w-7xl items-center px-4 text-xl">
         <div className="grid w-full grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
             <div className="py-3 mb-2">
@@ -27,8 +27,8 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="flex aspect-square w-full max-w-md items-center justify-center rounded-3xl bg-blue-50">
               <img 
-                src="personal/Edbert_Opera.jpeg" 
-                alt="Edbert C Angwyn" 
+                src="personal/developer.jpeg" 
+                alt="Developer" 
                 className="rounded-3xl h-full w-full object-cover"
               />
             </div>
