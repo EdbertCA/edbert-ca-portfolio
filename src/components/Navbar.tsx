@@ -18,7 +18,7 @@ export default function Navbar() {
     }`;
 
   return (
-    <header className="sticky top-0 bg-white border-b border-slate-200">
+    <header className="sticky top-0 z-50 bg-white border-b border-slate-200">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
         <NavLink to="/" className="text-xl font-semibold text-slate-900">
           <span className="mr-2 text-blue-400">■</span>
@@ -33,26 +33,31 @@ export default function Navbar() {
         </nav>
         <button
           onClick={() => setMenuOpen((open) => !open)}
-          className="sm:hidden"
+          className={`sm:hidden transition-transform duration-300 ${
+            menuOpen ? "rotate-90" : "rotate-0"
+          }`}
           aria-label="Toggle navigation menu"
         >
           {menuOpen ? <X /> : <Menu />}
         </button>
       </div>
-      {menuOpen && (
-        <nav className="flex flex-col px-8 pb-5 sm:hidden">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.path}
-              to={link.path}
-              onClick={() => setMenuOpen(false)}
-              className={navLinkStyle}
-            >
-              {link.name}
-            </NavLink>
-          ))}
-        </nav>
-      )}
+      <nav className={`flex flex-col overflow-hidden px-8 transition-all duration-300 sm:hidden ${
+        menuOpen
+          ? "max-h-80 pb-5 opacity-100"
+          : "max-h-0 pb-0 opacity-0"
+        }`}
+      >
+        {navLinks.map((link) => (
+          <NavLink
+            key={link.path}
+            to={link.path}
+            onClick={() => setMenuOpen(false)}
+            className={navLinkStyle}
+          >
+            {link.name}
+          </NavLink>
+        ))}
+      </nav>
     </header>
   )
 }
