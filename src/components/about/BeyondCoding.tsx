@@ -4,7 +4,7 @@ import PersonalSlideShow from "./PersonalSlideShow";
 export default function BeyondCoding() {
   return (
     <section className="mt-8 flex items-center gap-5 border-t border-slate-200 pt-10">
-      <div className="w-1/2">
+      <div className="flex-1">
         <h2 className="text-3xl font-semibold text-slate-900">Beyond Coding</h2>
 
         <p className="mt-3 text-lg leading-8 text-slate-600">
@@ -28,8 +28,8 @@ export default function BeyondCoding() {
         </ul>
       </div>
 
-      <div className="flex w-1/2 justify-center">
-        <div className="w-full max-w-md overflow-hidden rounded-3xl">
+      <div className="flex flex-1 justify-center">
+        <div className="w-full max-w-md">
           <PersonalSlideShow />
         </div>
       </div>
