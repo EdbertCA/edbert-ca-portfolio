@@ -11,7 +11,7 @@ export default function Footer() {
             href="https://github.com/EdbertCA"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-500 hover:text-blue-700"
+            className="text-slate-500 hover:text-blue-700 transition-transform duration-250 hover:-translate-y-0.5"
           >
             <FaGithub className="h-6 w-6"/>
           </a>
@@ -19,13 +19,13 @@ export default function Footer() {
             href="https://www.linkedin.com/in/edbert-clarence-angwyn/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-500 hover:text-blue-700"
+            className="text-slate-500 hover:text-blue-700 transition-transform duration-250 hover:-translate-y-0.5"
           >
             <FaLinkedin className="h-6 w-6"/>
           </a>
           <a 
             href="mailto:edbert.ca05@gmail.com"
-            className="text-slate-500 hover:text-blue-700"
+            className="text-slate-500 hover:text-blue-700 transition-transform duration-250 hover:-translate-y-0.5"
           >
             <Mail className="h-6 w-6"/>
           </a>
