@@ -3,7 +3,7 @@ import PersonalSlideShow from "./PersonalSlideShow";
 
 export default function BeyondCoding() {
   return (
-    <section className="mt-8 flex items-center gap-5 border-t border-slate-200 pt-10">
+    <section className="mt-8 flex flex-col sm:flex-row items-center gap-5 border-t border-slate-200 pt-10">
       <div className="flex-1">
         <h2 className="text-3xl font-semibold text-slate-900">Beyond Coding</h2>
 

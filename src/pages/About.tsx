@@ -8,7 +8,7 @@ export default function About() {
         <img 
           src="personal/Edbert_GC.jpeg" 
           alt="Edbert C Angwyn" 
-          className="w-40 h-40 rounded-full border-4 border-blue-300 object-cover p-1"
+          className="shrink-0 w-40 h-40 rounded-full border-4 border-blue-300 object-cover p-1"
         />
         <div className="pl-7">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-blue-500">ABOUT</p>
@@ -48,7 +48,7 @@ export default function About() {
         <img 
           src="personal/Edbert_UNSW.jpeg" 
           alt="Edbert C Angwyn" 
-          className="w-45 h-45 rounded-full object-cover p-1 ml-8"
+          className="shrink-0 w-40 h-40 md:w-45 md:h-45 rounded-full object-cover p-1 ml-3"
         />
       </section>
 
