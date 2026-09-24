@@ -9,7 +9,7 @@ export default function Contact() {
   const [state, handleSubmit] = useForm("mljdjlry");
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-8">
+    <section className="mx-auto max-w-7xl px-4 py-8 animate-fade-up">
       <p className="text-sm font-semibold uppercase tracking-widest text-blue-500">Get in Touch</p>
       <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">Let's talk</h1>
       <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">

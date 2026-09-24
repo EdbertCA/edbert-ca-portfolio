@@ -3,7 +3,7 @@ import BeyondCoding from "../components/about/BeyondCoding";
 
 export default function About() {
   return (
-    <main className="mx-auto max-w-7xl px-4 py-8">
+    <main className="mx-auto max-w-7xl px-4 py-8 animate-fade-up">
       <section className="flex items-center">
         <img 
           src="personal/Edbert_GC.jpeg" 

@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <section className="py-4 mx-auto flex min-h-[calc(100vh-100px)] max-w-7xl items-center px-4 text-xl">
         <div className="grid w-full grid-cols-1 items-center gap-12 md:grid-cols-2">
-          <div>
+          <div className="animate-fade-up">
             <div className="py-3 mb-2">
               <h1 className="font-bold text-4xl leading-tight tracking-tight text-slate-900 md:text-5xl">Edbert Clarence Angwyn</h1>
               <h2 className="text-slate-500">Software Engineer · Web Developer</h2>
@@ -24,7 +24,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center animate-fade-up animation-delay-150">
             <div className="flex aspect-square w-full max-w-md items-center justify-center rounded-3xl bg-blue-50">
               <img 
                 src="personal/developer.jpeg" 
