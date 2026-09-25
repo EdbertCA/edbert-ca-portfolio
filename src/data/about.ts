@@ -1,6 +1,6 @@
 import {
   Headphones,
-  GraduationCap,
+  Grid3x3,
   SquarePlay,
   Utensils,
 } from "lucide-react";
@@ -65,13 +65,13 @@ export const skills = {
 export const hobbies = [
   { name: "Listening to music", icon: Headphones },
   { name: "Watching YouTube", icon: SquarePlay },
-  { name: "Teaching Mathematics", icon: GraduationCap },
+  { name: "Playing Sudoku", icon: Grid3x3 },
   { name: "Exploring new food", icon: Utensils },
 ];
 
 export const IMAGES = [
   "personal/Edbert_Opera.jpeg",
   "personal/Edbert_Burwood.jpeg",
-  "personal/Edbert_Teaching.png",
+  "personal/Edbert_KL.jpeg",
   "personal/Edbert_Cendol.jpeg"
 ]

@@ -9,7 +9,7 @@ const DescriptionComponent = () => {
         1000,
         "I develop full-stack applications",
         1000,
-        "I enjoy solving problems",
+        "I enjoy turning ideas into real projects",
         1000,
       ]}
       wrapper="span"

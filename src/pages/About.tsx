@@ -1,5 +1,6 @@
 import SkillsSection from "../components/about/SkillSection";
 import BeyondCoding from "../components/about/BeyondCoding";
+import Experiences from "../components/about/Experiences";
 
 export default function About() {
   return (
@@ -30,6 +31,8 @@ export default function About() {
         </p>
       </section>
 
+      <Experiences />
+
       <section className="flex items-center mt-10 border-t border-slate-200 pt-6">
         <div>
           <h2 className="text-3xl font-semibold">
@@ -48,7 +51,7 @@ export default function About() {
         <img 
           src="personal/Edbert_UNSW.jpeg" 
           alt="Edbert C Angwyn" 
-          className="shrink-0 w-40 h-40 md:w-45 md:h-45 rounded-full object-cover p-1 ml-3"
+          className="shrink-0 w-40 h-40 md:w-45 md:h-45 rounded-full object-cover p-1 ml-5"
         />
       </section>
 
