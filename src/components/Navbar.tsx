@@ -30,6 +30,14 @@ export default function Navbar() {
               {link.name}
             </NavLink>
           ))}
+          <a
+            href="personal/Edbert_Resume_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full px-4 py-2"
+          >
+            View Resume
+          </a>
         </nav>
         <button
           onClick={() => setMenuOpen((open) => !open)}
@@ -57,6 +65,14 @@ export default function Navbar() {
             {link.name}
           </NavLink>
         ))}
+        <a
+          href="personal/Edbert_Resume_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full px-4 py-2"
+        >
+          View Resume
+        </a>
       </nav>
     </header>
   )
