@@ -1,4 +1,24 @@
 import { Link } from "react-router-dom";
+import { TypeAnimation } from 'react-type-animation';
+
+const DescriptionComponent = () => {
+  return (
+    <TypeAnimation
+      sequence={[
+        "I build web applications",
+        1000,
+        "I develop full-stack applications",
+        1000,
+        "I enjoy solving problems",
+        1000,
+      ]}
+      wrapper="span"
+      speed={50}
+      className="text-2xl"
+      repeat={Infinity}
+    />
+  );
+};
 
 export default function Home() {
   return (
@@ -8,6 +28,7 @@ export default function Home() {
           <div className="animate-fade-up">
             <div className="py-3 mb-2">
               <h1 className="font-bold text-4xl leading-tight tracking-tight text-slate-900 md:text-5xl">Edbert Clarence Angwyn</h1>
+              <DescriptionComponent />
               <h2 className="text-slate-500">Software Engineer · Web Developer</h2>
             </div>
 
