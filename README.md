@@ -1,5 +1,7 @@
 Personal Portfolio
 
+Live demo: https://edbert-ca-portfolio.vercel.app/
+
 My personal portfolio website showcasing my projects, technical skills, experience, and education.
 
 The website was built from scratch using React and TypeScript, with some helper 
