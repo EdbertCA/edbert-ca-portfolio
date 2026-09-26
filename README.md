@@ -33,16 +33,12 @@ Libraries & Tools
 
 Pages
 
-Home
-An introduction about who I am and my focus as a software developer, with reference links to my project and about me
+Home - An introduction about who I am and my focus as a software developer, with reference links to my project and about me
 
-Projects
-A showcase of projects I have worked on, including descriptions, technologies used, screenshots, source code, or live demos where available.
+Projects - A showcase of projects I have worked on, including descriptions, technologies used, screenshots, source code, or live demos where available.
 
-About
-More information about my background, education, experience, technical skills, and interests outside of programming.
+About - More information about my background, education, experience, technical skills, and interests outside of programming.
 
-Contact
-A contact form and links for reaching out to me regarding opportunities, projects, or connections.
+Contact - A contact form and links for reaching out to me regarding opportunities, projects, or connections.
 
 Built by Edbert Clarence Angwyn
